@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_learn" default="compile.module.learn">
+  <dirname property="module.learn.basedir" file="${ant.file.module_learn}"/>
+  
+  <property name="module.jdk.home.learn" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.learn" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.learn" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.learn" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="learn.output.dir" value="${module.learn.basedir}/out/production/LEARN"/>
+  <property name="learn.testoutput.dir" value="${module.learn.basedir}/out/test/LEARN"/>
+  
+  <path id="learn.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="learn.module.production.classpath">
+    <path refid="${module.jdk.classpath.learn}"/>
+    <path refid="library.mysql-connector-java-5.1.classpath"/>
+  </path>
+  
+  <path id="learn.runtime.production.module.classpath">
+    <pathelement location="${learn.output.dir}"/>
+    <path refid="library.mysql-connector-java-5.1.classpath"/>
+  </path>
+  
+  <path id="learn.module.classpath">
+    <path refid="${module.jdk.classpath.learn}"/>
+    <pathelement location="${learn.output.dir}"/>
+    <path refid="library.mysql-connector-java-5.1.classpath"/>
+  </path>
+  
+  <path id="learn.runtime.module.classpath">
+    <pathelement location="${learn.testoutput.dir}"/>
+    <pathelement location="${learn.output.dir}"/>
+    <path refid="library.mysql-connector-java-5.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.learn">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.learn">
+    <patternset refid="excluded.from.module.learn"/>
+  </patternset>
+  
+  <path id="learn.module.sourcepath">
+    <dirset dir="${module.learn.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.learn" depends="compile.module.learn.production,compile.module.learn.tests" description="Compile module LEARN"/>
+  
+  <target name="compile.module.learn.production" depends="register.custom.compilers" description="Compile module LEARN; production classes">
+    <mkdir dir="${learn.output.dir}"/>
+    <javac2 destdir="${learn.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.learn}/javac">
+      <compilerarg line="${compiler.args.learn}"/>
+      <bootclasspath refid="learn.module.bootclasspath"/>
+      <classpath refid="learn.module.production.classpath"/>
+      <src refid="learn.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.learn"/>
+    </javac2>
+    
+    <copy todir="${learn.output.dir}">
+      <fileset dir="${module.learn.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.learn.tests" depends="register.custom.compilers,compile.module.learn.production" description="compile module LEARN; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.learn" description="cleanup module">
+    <delete dir="${learn.output.dir}"/>
+    <delete dir="${learn.testoutput.dir}"/>
+  </target>
+</project>

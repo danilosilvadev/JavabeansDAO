@@ -1,6 +1,6 @@
-package fj21_jdbc.teste;
+package lesson1_jdbc.teste;
 
-import fj21_jdbc.jdbc.ConnectionFactory;
+import lesson1_jdbc.jdbc.ConnectionFactory;
 
 import java.sql.Connection;
 import java.sql.SQLException;

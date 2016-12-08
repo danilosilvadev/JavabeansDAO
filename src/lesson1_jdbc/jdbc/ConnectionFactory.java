@@ -1,4 +1,4 @@
-package fj21_jdbc.jdbc;
+package lesson1_jdbc.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

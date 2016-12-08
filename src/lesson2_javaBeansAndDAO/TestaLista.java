@@ -19,6 +19,20 @@ public class TestaLista {
             System.out.println("Email: " + contatoJavaBeans.getEmail());
             System.out.println("endereço: " + contatoJavaBeans.getEndereco());
             System.out.println("Nascimento: " + contatoJavaBeans.getDataNascimento());
+            System.out.println("id: " + contatoJavaBeans.getId());
+
+        }
+
+
+
+
+        for (ContatoJavaBeans contatoJavaBeans2: contatos){
+
+            System.out.println("Nome: " + contatoJavaBeans2.getNome());
+            System.out.println("Email: " + contatoJavaBeans2.getEmail());
+            System.out.println("endereço: " + contatoJavaBeans2.getEndereco());
+            System.out.println("Nascimento: " + contatoJavaBeans2.getDataNascimento());
+            System.out.println("id: " + contatoJavaBeans2.getId());
 
         }
     }

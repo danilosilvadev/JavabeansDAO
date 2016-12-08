@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c23bcde-a5ab-49e1-9a30-2ca82d887f1e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java" afterPath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java" afterPath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java" afterPath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java" afterPath="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java" />
     </list>
     <ignored path="JAVA EE.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +40,7 @@
       <file leaf-file-name="ContatoJavaBeans.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="24">
               <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="e#306#307#0" expanded="true" />
@@ -71,23 +71,33 @@
       <file leaf-file-name="ContatoDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
+            <state relative-caret-position="119">
+              <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
                 <element signature="e#385#386#0" expanded="true" />
-                <element signature="e#1419#1437#0" expanded="true" />
+                <element signature="e#2701#2719#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestaLista.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestaLista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="-27">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestaRemoveEAltera.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaRemoveEAltera.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -96,8 +106,8 @@
       <file leaf-file-name="TestaInsere.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+            <state relative-caret-position="177">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,7 +116,7 @@
       <file leaf-file-name="TestaConexao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lesson1_jdbc/teste/TestaConexao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="238">
               <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -141,10 +151,11 @@
         <option value="$PROJECT_DIR$/src/lesson1_jdbc/jdbc/ConnectionFactory.java" />
         <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/Contato.java" />
         <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBean.java" />
+        <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java" />
         <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java" />
         <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java" />
-        <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java" />
         <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java" />
+        <option value="$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaRemoveEAltera.java" />
       </list>
     </option>
   </component>
@@ -262,6 +273,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="lesson2_javaBeansAndDAO.TestaLista" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="IntelliJ IDEA Community Edition IC-162.2032.8" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="LEARN" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestaInsere" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="lesson2_javaBeansAndDAO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="lesson2_javaBeansAndDAO.TestaInsere" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -540,12 +571,14 @@
       <listeners />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.TestaLista" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestaInsere" />
     </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.TestaLista" />
+        <item index="1" class="java.lang.String" itemvalue="Application.TestaInsere" />
       </list>
     </recent_temporary>
   </component>
@@ -571,12 +604,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928476" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34952766" sideWeight="0.5025" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50472337" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50472337" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -644,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson1_jdbc/teste/TestaConexao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="238">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -662,9 +695,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#2701#2719#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoJavaBeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="24">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="e#306#307#0" expanded="true" />
@@ -691,31 +745,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/ContatoDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#1419#1437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaInsere.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+        <state relative-caret-position="-27">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaLista.java">
+    <entry file="file://$PROJECT_DIR$/src/lesson2_javaBeansAndDAO/TestaRemoveEAltera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding />
         </state>
       </provider>

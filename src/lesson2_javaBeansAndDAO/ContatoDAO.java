@@ -42,6 +42,39 @@ public class ContatoDAO {
 
     }
 
+    public void altera(ContatoJavaBeans contatoJavaBeans){
+        String sql = "update contato set nome=?, email=?, endereco=?, dataNascimento=?, where id=?";
+        try {
+            //prepared statement to update
+            PreparedStatement statement = connection.prepareStatement(sql);
+            //set the values
+            statement.setString(1, contatoJavaBeans.getNome());
+            statement.setString(2, contatoJavaBeans.getEmail());
+            statement.setString(3, contatoJavaBeans.getEndereco());
+            statement.setString(4, String.valueOf(new Date(contatoJavaBeans.getDataNascimento().getTimeInMillis())));
+            statement.setLong(5, contatoJavaBeans.getId());
+
+            //execute
+            statement.execute();
+            statement.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void remove(ContatoJavaBeans contatoJavaBeans){
+        try {
+            PreparedStatement statement = connection.prepareStatement("delete" + "from contato where id=?");
+            statement.setLong(1, contatoJavaBeans.getId());
+            statement.execute();
+            statement.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
         public List<ContatoJavaBeans> getLista() {
             try {
                 List<ContatoJavaBeans> contatoJavaBeansList = new ArrayList<ContatoJavaBeans>();
@@ -75,6 +108,7 @@ public class ContatoDAO {
                 throw new RuntimeException(e);
             }
         }
+
 
 
 }

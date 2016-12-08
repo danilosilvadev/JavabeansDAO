@@ -52,4 +52,6 @@ public class ContatoJavaBeans {
     public void setDataNascimento(Calendar dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
+
+
 }

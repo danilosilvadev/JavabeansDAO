@@ -23,6 +23,22 @@ public class TestaInsere {
 
         System.out.print("Saved!");
 
+        //new contact
+
+        ContatoJavaBeans contatoJavaBeans2 =  new ContatoJavaBeans();
+        contatoJavaBeans2.setNome("Ícaro");
+        contatoJavaBeans2.setEmail("icarojosias@hotmail.com");
+        contatoJavaBeans2.setEndereco("Rua turiaçú");
+        contatoJavaBeans2.setDataNascimento(Calendar.getInstance());
+
+        //save in this connection
+        ContatoDAO dao2 = new ContatoDAO();
+
+        //elegant method
+        dao2.adiciona(contatoJavaBeans2);
+
+        System.out.print("Saved again!");
+
     }
 
 }

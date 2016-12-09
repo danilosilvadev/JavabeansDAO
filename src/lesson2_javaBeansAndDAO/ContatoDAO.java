@@ -43,7 +43,8 @@ public class ContatoDAO {
     }
 
     public void altera(ContatoJavaBeans contatoJavaBeans){
-        String sql = "update contato set nome=?, email=?, endereco=?, dataNascimento=?, where id=?";
+        String sql = "update contato set nome=?, email=?, endereco=?, dataNascimento=? where id=?";
+
         try {
             //prepared statement to update
             PreparedStatement statement = connection.prepareStatement(sql);
@@ -55,7 +56,7 @@ public class ContatoDAO {
             statement.setLong(5, contatoJavaBeans.getId());
 
             //execute
-            statement.execute();
+            statement.executeUpdate();
             statement.close();
 
         } catch (SQLException e) {
@@ -66,48 +67,48 @@ public class ContatoDAO {
 
     public void remove(ContatoJavaBeans contatoJavaBeans){
         try {
-            PreparedStatement statement = connection.prepareStatement("delete" + "from contato where id=?");
+            PreparedStatement statement = connection.prepareStatement("delete from contato where id=?");
             statement.setLong(1, contatoJavaBeans.getId());
-            statement.execute();
+            statement.executeUpdate();
             statement.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-        public List<ContatoJavaBeans> getLista() {
-            try {
-                List<ContatoJavaBeans> contatoJavaBeansList = new ArrayList<ContatoJavaBeans>();
-                PreparedStatement statement = this.connection.prepareStatement("select * from contato");
-                ResultSet resultSet = statement.executeQuery();
-                while (resultSet.next()){
+    public List<ContatoJavaBeans> getLista() {
+        try {
+            List<ContatoJavaBeans> contatoJavaBeansList = new ArrayList<ContatoJavaBeans>();
+            PreparedStatement statement = this.connection.prepareStatement("select * from contato");
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()){
 
-                    //Creating the object
+                //Creating the object
 
-                    ContatoJavaBeans contatoJavaBeans = new ContatoJavaBeans();
-                    contatoJavaBeans.setId(resultSet.getLong("id"));
-                    contatoJavaBeans.setNome(resultSet.getString("nome"));
-                    contatoJavaBeans.setEmail(resultSet.getString("email"));
-                    contatoJavaBeans.setEndereco(resultSet.getString("endereco"));
+                ContatoJavaBeans contatoJavaBeans = new ContatoJavaBeans();
+                contatoJavaBeans.setId(resultSet.getLong("id"));
+                contatoJavaBeans.setNome(resultSet.getString("nome"));
+                contatoJavaBeans.setEmail(resultSet.getString("email"));
+                contatoJavaBeans.setEndereco(resultSet.getString("endereco"));
 
-                    //Making date throught calendar
+                //Making date throught calendar
 
-                    Calendar data = Calendar.getInstance();
-                    data.setTime(resultSet.getDate("dataNascimento"));
-                    contatoJavaBeans.setDataNascimento(data);
+                Calendar data = Calendar.getInstance();
+                data.setTime(resultSet.getDate("dataNascimento"));
+                contatoJavaBeans.setDataNascimento(data);
 
-                    //Adding the object to the list
+                //Adding the object to the list
 
-                    contatoJavaBeansList.add(contatoJavaBeans);
-                }
-
-                resultSet.close();
-                statement.close();
-                return contatoJavaBeansList;
-            } catch (SQLException e){
-                throw new RuntimeException(e);
+                contatoJavaBeansList.add(contatoJavaBeans);
             }
+
+            resultSet.close();
+            statement.close();
+            return contatoJavaBeansList;
+        } catch (SQLException e){
+            throw new RuntimeException(e);
         }
+    }
 
 
 
